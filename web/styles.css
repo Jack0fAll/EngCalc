@@ -55,36 +55,10 @@ header #calc-icon {
 }
 
 main {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: auto;
-}
-
-.content-pane {
   border: solid white 2px;
-  background-color: var(--background-color);
-  height: 20em;
 }
-
-.history {
-  overflow-y: scroll;
-}
-
-textarea {
-  box-sizing: border-box;
-  width: 100%;
-  height: 100%;
-  background-color: var(--background-color);
-  color: white;
-}
-
-/* .symbols {
-  grid-row: 3;
-  grid-column: 1;
-} */
 
 footer img {
-  width: 100%;
-  height: 100%;
+  width: 50%;
 }
 

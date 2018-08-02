@@ -17,7 +17,10 @@
 
   <body>
     <!-- Provide loading message while loading -->
-    <div id="initial-output">Loading . . . Wait just a sec . . .</div>
+    <div id="initial-output">
+      Loading . . . Wait just a sec . . .<br>
+      <noscript>EngCalc is unable to load necessary scripts. Are you using a script blocker?</noscript>
+    </div>
 
     <!-- Simple Navbar for now. Want aesthetic font for name of webapp -->
     <header>
@@ -28,25 +31,24 @@
     <!-- Main Content Pane -->
     <main>
       <!-- Previous calculations and results -->
-      <label for="history-content">History:</label>
-      <div id="history-content" class="history content-pane">
-        <p>Old Entry</p>
-        <p>Old Entry</p>
-        <p>Old Entry</p>
-        <p>Old Entry</p>
-        <p>$$x = {-b \pm \sqrt{b^2-4ac} \over 2a}$$</p>
+      <div class="history">
+        <ul>
+          <li>Calculation 1</li>
+          <li>Calculation 2</li>
+          <li>Calculation 3</li>
+        </ul>
       </div>
       <!-- Current calculation / formula -->
-      <label for="current-calc-content">Current Calculation:</label>
-      <div id="current-calc-content" class="current-calculation content-pane">
-        <textarea autofocus
-                  placeholder="Enter new calculation">
-        </textarea>
+      <div class="current">
+        <code>
+          Modify Raw Latex code here.
+        </code>
+        Modify Rendered Math here.
+        <button type="button">Calculate</button>
       </div>
       <!-- Functions / symbols / formulas -->
-      <label for="symbols-content">Functions, Symbols, and Formulas:</label>
-      <div id="symbols-content" class="symbols content-pane">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ipsum dolor sit amet consectetur adipiscing elit duis. Interdum velit euismod in pellentesque massa placerat. Morbi blandit cursus risus at ultrices mi. In fermentum posuere urna nec tincidunt praesent semper feugiat nibh. Leo a diam sollicitudin tempor id eu nisl. Tristique magna sit amet purus gravida quis blandit. Neque convallis a cras semper auctor neque vitae tempus quam. Molestie a iaculis at erat. Eget mi proin sed libero enim sed faucibus turpis. Felis imperdiet proin fermentum leo vel orci porta non pulvinar. Pretium viverra suspendisse potenti nullam. In mollis nunc sed id semper.
+      <div class="math-controls">
+        <button type="button">AddFraction</button>
       </div>
     </main>
 
