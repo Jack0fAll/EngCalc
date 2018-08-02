@@ -58,18 +58,36 @@ main {
   /* border: solid white 2px; */
 }
 
-.content {
+/* .content {
+  
+} */
+
+/* .history {
+  margin: auto;
+} */
+
+.history ul {
+  margin: 0;
+  padding: 0;
+
   border: solid white 2px;
 }
 
-.history {
-
+.history li {
+  list-style: none;
+  background-color: rgba(255, 255, 255, 0.1);
+  margin: auto;
+  padding-left: 1%;
+  padding-right: 1%;
 }
 
 .current-calc {
   display: grid;
   grid-template-rows: repeat(2, 1fr);
   grid-template-columns: 7fr 1fr;
+
+  border-left: solid white 2px;
+  border-right: solid white 2px;
 }
 
 .current-calc code {
@@ -77,7 +95,7 @@ main {
   grid-column: 1;
 }
 
-.current-calc span{
+.current-calc input{
   grid-row: 2;
   grid-column: 1;
 }
@@ -89,10 +107,12 @@ main {
 }
 
 .math-controls {
-
+  border-left: solid white 2px;
+  border-right: solid white 2px;
+  border-bottom: solid white 2px;
 }
 
-.button {
+.ui-elem {
   background-color: var(--background-color);
   border: solid white 1px;
   color: white;
