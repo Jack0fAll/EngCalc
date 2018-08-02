@@ -1,5 +1,5 @@
 import 'dart:html';
 
 void main() {
-  querySelector('#output').text = 'Your Dart app is running.';
+  querySelector('#initial-output').remove(); //Show a loading message until this script loads
 }
