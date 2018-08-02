@@ -1,7 +1,9 @@
-import 'calculation.dart';
+import 'expression.dart';
 import 'result.dart';
 
 class Formula {
-    Calculation calculation;
-    Result result;
+  Expression calculation;
+  Result result;
+
+  Formula(this.calculation, this.result);
 }
