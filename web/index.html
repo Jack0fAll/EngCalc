@@ -12,6 +12,7 @@
       <link rel="stylesheet" href="styles.css">
       <link rel="icon" href="assets/ionicon_calculator_materialDesign.svg">
       <script defer src="main.dart.js"></script>
+      <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML"></script>
   </head>
 
   <body>
@@ -25,32 +26,29 @@
     </header>
 
     <!-- Main Content Pane -->
-    <div class="main-content">
+    <main>
       <!-- Previous calculations and results -->
-      <div class="history">
-        Bacon ipsum dolor amet strip steak beef ribs pork belly, sirloin short loin frankfurter swine shankle bresaola doner capicola kielbasa ham hock alcatra bacon. Venison drumstick bresaola beef ribs andouille cow biltong shank. Pig tail jowl, cupim bacon burgdoggen bresaola landjaeger short ribs brisket swine beef pork belly meatloaf spare ribs. Prosciutto cow hamburger, pastrami picanha flank tongue jowl. Frankfurter strip steak brisket prosciutto, bacon chuck buffalo beef capicola cow andouille chicken. Meatball brisket capicola tri-tip filet mignon shankle chuck landjaeger sausage tongue ball tip.
-
-        Andouille turducken pork chop biltong. Alcatra beef porchetta kielbasa burgdoggen frankfurter picanha rump spare ribs beef ribs buffalo bresaola andouille shoulder jowl. Turkey spare ribs brisket capicola meatball biltong ham hock ribeye. Shankle meatball leberkas sausage.
-        
-        Pork chop turkey corned beef sirloin filet mignon, andouille shank sausage beef ribs. Frankfurter doner tenderloin ham buffalo spare ribs. Boudin frankfurter ham hock beef ribs beef ham tail pastrami. Boudin short ribs shankle, andouille sirloin jowl chicken meatloaf ribeye brisket bacon pancetta rump.
-        
-        Cow fatback picanha, pancetta jerky doner shankle capicola. Pork belly frankfurter andouille bresaola turkey burgdoggen shankle venison sausage doner short ribs pig. Prosciutto jowl corned beef frankfurter chuck doner porchetta pancetta biltong sausage brisket pig bacon tail kevin. Filet mignon pork beef ribs bacon pork belly capicola pork chop prosciutto short loin picanha.
-        
-        Short ribs tongue bresaola boudin bacon picanha. Picanha shankle turkey tail jerky salami, brisket t-bone sausage shoulder. Rump corned beef meatloaf turkey chuck, drumstick short ribs pork loin venison salami pancetta cupim kielbasa hamburger. Pancetta filet mignon meatloaf, spare ribs landjaeger ribeye ham meatball rump pastrami tenderloin t-bone boudin.
+      <label for="history-content">History:</label>
+      <div id="history-content" class="history content-pane">
+        <p>Old Entry</p>
+        <p>Old Entry</p>
+        <p>Old Entry</p>
+        <p>Old Entry</p>
+        <p>$$x = {-b \pm \sqrt{b^2-4ac} \over 2a}$$</p>
       </div>
       <!-- Current calculation / formula -->
-      <div class="current-calculation">
-        Bacon ipsum dolor amet ham hock pig filet mignon, flank porchetta sirloin frankfurter. Venison frankfurter fatback salami. Meatloaf meatball boudin frankfurter bacon bresaola pancetta shoulder prosciutto pork chop tenderloin. Rump kielbasa capicola hamburger ham, salami pastrami pork flank beef ribs. Pork rump tongue andouille, cupim kevin fatback prosciutto pork loin boudin drumstick capicola meatloaf jowl. Shankle venison buffalo pastrami tongue fatback pork belly pork loin kielbasa boudin landjaeger pork.
-
-        Sirloin pork loin alcatra swine bacon cupim prosciutto pig porchetta. Porchetta picanha ham, kevin kielbasa spare ribs andouille ham hock short loin beef ribs cupim pancetta pork ribeye. Pork belly burgdoggen spare ribs cow, meatball prosciutto chuck strip steak pork t-bone andouille short ribs. Boudin tri-tip chuck frankfurter hamburger pork loin ribeye tongue pork belly shank. Hamburger jerky turkey capicola. Tenderloin pork loin picanha fatback sirloin cow. Corned beef shank ham, turkey picanha shoulder alcatra prosciutto pork ribeye short loin t-bone.
-        
-        Shankle corned beef short ribs leberkas pork loin, kevin hamburger tri-tip chuck pork short loin picanha drumstick meatball cow. Andouille strip steak ham hock, ham short ribs fatback chicken frankfurter doner beef ribs pastrami alcatra prosciutto bacon. Pig t-bone burgdoggen chicken rump. Burgdoggen frankfurter kielbasa flank pancetta pastrami doner tenderloin rump. Pancetta leberkas pig rump brisket shank.
-        
-        Cow sirloin pork landjaeger tongue kevin. Hamburger filet mignon tri-tip short ribs pork leberkas sirloin. Buffalo porchetta tongue short loin landjaeger. Flank chuck venison bresaola picanha capicola. Landjaeger ham pig chicken shankle ham hock meatball t-bone tenderloin shank. Swine doner short loin venison short ribs, prosciutto kevin filet mignon porchetta chicken sirloin sausage landjaeger. Pastrami cupim prosciutto pork chop tri-tip salami pancetta kevin.
-        
-        Cow turkey short ribs cupim ham hock shank, landjaeger drumstick pork loin salami venison pastrami kevin pig. Spare ribs ribeye ham hock doner tail. Buffalo landjaeger ham bresaola, tri-tip pastrami ball tip leberkas pork loin fatback meatball short ribs picanha prosciutto. Ham landjaeger beef tenderloin. Beef t-bone porchetta pork loin tongue capicola.
+      <label for="current-calc-content">Current Calculation:</label>
+      <div id="current-calc-content" class="current-calculation content-pane">
+        <textarea autofocus
+                  placeholder="Enter new calculation">
+        </textarea>
       </div>
-    </div>
+      <!-- Functions / symbols / formulas -->
+      <label for="symbols-content">Functions, Symbols, and Formulas:</label>
+      <div id="symbols-content" class="symbols content-pane">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ipsum dolor sit amet consectetur adipiscing elit duis. Interdum velit euismod in pellentesque massa placerat. Morbi blandit cursus risus at ultrices mi. In fermentum posuere urna nec tincidunt praesent semper feugiat nibh. Leo a diam sollicitudin tempor id eu nisl. Tristique magna sit amet purus gravida quis blandit. Neque convallis a cras semper auctor neque vitae tempus quam. Molestie a iaculis at erat. Eget mi proin sed libero enim sed faucibus turpis. Felis imperdiet proin fermentum leo vel orci porta non pulvinar. Pretium viverra suspendisse potenti nullam. In mollis nunc sed id semper.
+      </div>
+    </main>
 
     <footer>
       <img src="assets/JackOfAllLogoGreyAndBlue.png" alt="JackOfAll Logo">

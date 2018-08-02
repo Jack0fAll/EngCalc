@@ -1,6 +1,7 @@
 :root {
   /* Define some color variables */
   --navbar-color: #018786;
+  --background-color: #444;
   --num-navbar-cols: 3;
   --navbar-height: 50px;
 }
@@ -18,6 +19,8 @@ body {
   margin: 1% auto auto auto;
   padding: 0;
   font-family: 'Roboto', sans-serif;
+  background-color: black;
+  color: white;
 }
 
 /* This item only shows while the page is loading */
@@ -51,7 +54,37 @@ header #calc-icon {
   margin: 0;
 }
 
+main {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+}
+
+.content-pane {
+  border: solid white 2px;
+  background-color: var(--background-color);
+  height: 20em;
+}
+
+.history {
+  overflow-y: scroll;
+}
+
+textarea {
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  background-color: var(--background-color);
+  color: white;
+}
+
+/* .symbols {
+  grid-row: 3;
+  grid-column: 1;
+} */
+
 footer img {
   width: 100%;
+  height: 100%;
 }
 
