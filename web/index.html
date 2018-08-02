@@ -1,20 +1,56 @@
 <!DOCTYPE html>
 
 <html>
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="scaffolded-by" content="https://github.com/google/stagehand">
-    <title>EngCalc0</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="icon" href="favicon.ico">
-    <script defer src="main.dart.js"></script>
-</head>
+  <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="scaffolded-by" content="https://github.com/google/stagehand">
+      <title>EngCalc</title>
 
-<body>
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+      <link rel="stylesheet" href="styles.css">
+      <link rel="icon" href="assets/ionicon_calculator_materialDesign.svg">
+      <script defer src="main.dart.js"></script>
+  </head>
 
-  <div id="output"></div>
+  <body>
+    <!-- Provide loading message while loading -->
+    <div id="initial-output">Loading . . . Wait just a sec . . .</div>
 
-</body>
+    <!-- Simple Navbar for now. Want aesthetic font for name of webapp -->
+    <header>
+      <h1>EngCalc</h1>
+      <img id="calc-icon" src="assets/ionicon_calculator_materialDesign.svg" alt="Calculator Icon">
+      <img id="logo" src="assets/JackOfAllLogoGreyAndBlue.png" alt="JackOfAll Logo">
+    </header>
+
+    <!-- Main Content Pane -->
+    <div class="main-content">
+      <!-- Previous calculations and results -->
+      <div class="history">
+        Bacon ipsum dolor amet strip steak beef ribs pork belly, sirloin short loin frankfurter swine shankle bresaola doner capicola kielbasa ham hock alcatra bacon. Venison drumstick bresaola beef ribs andouille cow biltong shank. Pig tail jowl, cupim bacon burgdoggen bresaola landjaeger short ribs brisket swine beef pork belly meatloaf spare ribs. Prosciutto cow hamburger, pastrami picanha flank tongue jowl. Frankfurter strip steak brisket prosciutto, bacon chuck buffalo beef capicola cow andouille chicken. Meatball brisket capicola tri-tip filet mignon shankle chuck landjaeger sausage tongue ball tip.
+
+        Andouille turducken pork chop biltong. Alcatra beef porchetta kielbasa burgdoggen frankfurter picanha rump spare ribs beef ribs buffalo bresaola andouille shoulder jowl. Turkey spare ribs brisket capicola meatball biltong ham hock ribeye. Shankle meatball leberkas sausage.
+        
+        Pork chop turkey corned beef sirloin filet mignon, andouille shank sausage beef ribs. Frankfurter doner tenderloin ham buffalo spare ribs. Boudin frankfurter ham hock beef ribs beef ham tail pastrami. Boudin short ribs shankle, andouille sirloin jowl chicken meatloaf ribeye brisket bacon pancetta rump.
+        
+        Cow fatback picanha, pancetta jerky doner shankle capicola. Pork belly frankfurter andouille bresaola turkey burgdoggen shankle venison sausage doner short ribs pig. Prosciutto jowl corned beef frankfurter chuck doner porchetta pancetta biltong sausage brisket pig bacon tail kevin. Filet mignon pork beef ribs bacon pork belly capicola pork chop prosciutto short loin picanha.
+        
+        Short ribs tongue bresaola boudin bacon picanha. Picanha shankle turkey tail jerky salami, brisket t-bone sausage shoulder. Rump corned beef meatloaf turkey chuck, drumstick short ribs pork loin venison salami pancetta cupim kielbasa hamburger. Pancetta filet mignon meatloaf, spare ribs landjaeger ribeye ham meatball rump pastrami tenderloin t-bone boudin.
+      </div>
+      <!-- Current calculation / formula -->
+      <div class="current-calculation">
+        Bacon ipsum dolor amet ham hock pig filet mignon, flank porchetta sirloin frankfurter. Venison frankfurter fatback salami. Meatloaf meatball boudin frankfurter bacon bresaola pancetta shoulder prosciutto pork chop tenderloin. Rump kielbasa capicola hamburger ham, salami pastrami pork flank beef ribs. Pork rump tongue andouille, cupim kevin fatback prosciutto pork loin boudin drumstick capicola meatloaf jowl. Shankle venison buffalo pastrami tongue fatback pork belly pork loin kielbasa boudin landjaeger pork.
+
+        Sirloin pork loin alcatra swine bacon cupim prosciutto pig porchetta. Porchetta picanha ham, kevin kielbasa spare ribs andouille ham hock short loin beef ribs cupim pancetta pork ribeye. Pork belly burgdoggen spare ribs cow, meatball prosciutto chuck strip steak pork t-bone andouille short ribs. Boudin tri-tip chuck frankfurter hamburger pork loin ribeye tongue pork belly shank. Hamburger jerky turkey capicola. Tenderloin pork loin picanha fatback sirloin cow. Corned beef shank ham, turkey picanha shoulder alcatra prosciutto pork ribeye short loin t-bone.
+        
+        Shankle corned beef short ribs leberkas pork loin, kevin hamburger tri-tip chuck pork short loin picanha drumstick meatball cow. Andouille strip steak ham hock, ham short ribs fatback chicken frankfurter doner beef ribs pastrami alcatra prosciutto bacon. Pig t-bone burgdoggen chicken rump. Burgdoggen frankfurter kielbasa flank pancetta pastrami doner tenderloin rump. Pancetta leberkas pig rump brisket shank.
+        
+        Cow sirloin pork landjaeger tongue kevin. Hamburger filet mignon tri-tip short ribs pork leberkas sirloin. Buffalo porchetta tongue short loin landjaeger. Flank chuck venison bresaola picanha capicola. Landjaeger ham pig chicken shankle ham hock meatball t-bone tenderloin shank. Swine doner short loin venison short ribs, prosciutto kevin filet mignon porchetta chicken sirloin sausage landjaeger. Pastrami cupim prosciutto pork chop tri-tip salami pancetta kevin.
+        
+        Cow turkey short ribs cupim ham hock shank, landjaeger drumstick pork loin salami venison pastrami kevin pig. Spare ribs ribeye ham hock doner tail. Buffalo landjaeger ham bresaola, tri-tip pastrami ball tip leberkas pork loin fatback meatball short ribs picanha prosciutto. Ham landjaeger beef tenderloin. Beef t-bone porchetta pork loin tongue capicola.
+      </div>
+    </div>
+  </body>
 </html>
