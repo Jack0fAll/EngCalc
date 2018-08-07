@@ -70,7 +70,7 @@ footer img {
     margin-bottom: 1%;
 }
 
-.var {
+.term {
     border: solid var(--text-color) 1px;
     padding: 0.5%;
 }
