@@ -1,0 +1,87 @@
+
+/* Define custom variables */
+:root {
+    --navbar-background-color: #00695C;
+    --content-background-color: #424242;
+    --title-background-color: #212121;
+    --button-background-color: #616161;
+    --background-color: black;
+    --text-color: white;
+}
+
+/* Embed custom font */
+@font-face {
+    font-family: "SummitMedium-Display";
+    src: url("assets/SummitMedium-Display.otf");
+}
+
+body {
+    width: 80%; /* Make the content on this page smaller than the width of the window */
+    margin: 1% auto 1% auto; /* Give some space on top and bottom. Center it left and right */
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color); /* Change text color */
+}
+
+/* This item only shows while the page is loading */
+#initial-output {
+    text-align: center;
+    margin: 5% auto; /* Make the screen shift a bit down to show this message */
+}
+
+header {
+    background-color: var(--navbar-background-color);
+    font-family: SummitMedium-Display;
+}
+
+header div {
+    display: flex;
+    justify-content: center;
+}
+
+header img {
+    max-width: 3em;
+}
+
+footer {
+    display: flex;
+    justify-content: flex-end;
+}
+
+footer img {
+    max-width: 10em;
+}
+
+.content-title {
+    background-color: var(--title-background-color);
+    padding-left: 1%;
+}
+
+.content {
+    background-color: var(--content-background-color);
+    height: 15rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.content div {
+    margin-left: 2%;
+    margin-bottom: 1%;
+}
+
+.var {
+    border: solid var(--text-color) 1px;
+    padding: 0.5%;
+}
+
+button {
+    margin: 2%;
+    color: var(--text-color);
+    border: solid var(--text-color) 1px;
+    background-color: var(--button-background-color);
+}
+
+.math-controls {
+    height: 100%;
+}

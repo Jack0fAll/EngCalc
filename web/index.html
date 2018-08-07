@@ -9,7 +9,8 @@
       <title>EngCalc</title>
 
       <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
-      <link rel="stylesheet" href="styles.css">
+      <!-- <link rel="stylesheet" href="styles.css"> -->
+      <link rel="stylesheet" href="styles1.css">
       <link rel="icon" href="assets/ionicon_calculator_materialDesign.svg">
       <script defer src="main.dart.js"></script>
       <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML"></script>
@@ -24,29 +25,31 @@
 
     <!-- Simple Navbar for now. Want aesthetic font for name of webapp -->
     <header>
-      <h1>EngCalc</h1>
-      <img id="calc-icon" src="assets/ionicon_calculator_materialDesign.svg" alt="Calculator Icon">
+      <div>
+        <h1>EngCalc</h1>
+        <img id="calc-icon" src="assets/ionicon_calculator_materialDesign.svg" alt="Calculator Icon">
+      </div>
     </header>
 
     <!-- Main Content Pane -->
     <main>
       <!-- Previous calculations and results -->
+      <div class="content-title"><strong>History</strong></div>
       <div class="content history">
-        <ul>
-          <!-- Items will be added here with dart script -->
-        </ul>
+        <div>Test Historic Formula</div>
+        <div class="formula">
+            <span class="var">Var</span>
+        </div>
       </div>
       <!-- Current calculation / formula -->
+      <div class="content-title"><strong>Current Calculation</strong></div>
       <div class="content current-calc">
-        <!-- <code>
-          Modify Raw Latex code here.
-        </code> -->
-        <input class="ui-elem" type="text" placeholder="Enter Calculation">
-        <button class="ui-elem" type="button">Calculate</button>
+        <div>Test Formula Being Edited</div>
       </div>
       <!-- Functions / symbols / formulas -->
+      <div class="content-title"><strong>Formula Editter</strong></div>
       <div class="content math-controls">
-        <button class="ui-elem" type="button">AddFraction</button>
+        <span><button class="ui-elem" type="button">AddFraction</button></span>
       </div>
     </main>
 
