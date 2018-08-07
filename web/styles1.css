@@ -70,11 +70,6 @@ footer img {
     margin-bottom: 1%;
 }
 
-.term {
-    border: solid var(--text-color) 1px;
-    padding: 0.5%;
-}
-
 button {
     margin: 2%;
     color: var(--text-color);
@@ -84,4 +79,49 @@ button {
 
 .math-controls {
     height: 100%;
+}
+
+.term {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 2fr 1fr;
+    width: 3em;
+    height: 4em;
+
+    border: solid var(--text-color) 1px;
+    padding: 1%;
+    margin: 1%;
+}
+
+.formula {
+    padding: 1%;
+    margin: 1%;
+}
+
+.sign,
+.variable {
+    grid-row: 2 / 3;
+}
+
+.sign {
+    grid-column: 1 / 2;
+}
+
+.variable {
+    grid-column: 2 / 3;
+}
+
+.sub,
+.sup {
+    grid-column: 3 / 4;
+
+    font-size: 0.7em;
+}
+
+.sub {
+    grid-row: 3 / 4;
+}
+
+.sup {
+    grid-row: 1 / 2;
 }
