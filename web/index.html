@@ -13,7 +13,7 @@
       <link rel="stylesheet" href="styles1.css">
       <link rel="icon" href="assets/ionicon_calculator_materialDesign.svg">
       <script defer src="main.dart.js"></script>
-      <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML"></script>
+      <!-- <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML"></script> -->
   </head>
 
   <body>
@@ -38,12 +38,14 @@
       <div class="content history">
         <div>Test Historic Formula</div>
         <var class="formula">
-          <span class="term term1">
+          <div class="term term1">
             <span class="sign">-</span>
-            <span class="variable">3</span>
+            <!-- <span class="variable">3</span> -->
+            <span class="variable"><input type="text" name="var" class="variable var-input" value="3"></span>
+            <!-- <input type="text" name="var" class="variable var-input" placeholder="3"> -->
             <span class="sub">0</span>
             <span class="sup">-1/2</span>
-          </span>
+          </div>
         </var>
       </div>
       <!-- Current calculation / formula -->

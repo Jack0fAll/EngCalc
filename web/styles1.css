@@ -38,6 +38,7 @@ header {
 header div {
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 header img {
@@ -109,6 +110,17 @@ button {
 
 .variable {
     grid-column: 2 / 3;
+
+    overflow-x: visible;
+    /* Make the .variable text field able to expand as far as necessary. This may require javascript. */
+}
+
+.var-input {
+    width: 100%;
+
+    color: var(--text-color);
+    background-color: var(--button-background-color);
+    border-width: 0;
 }
 
 .sub,
@@ -125,3 +137,5 @@ button {
 .sup {
     grid-row: 1 / 2;
 }
+
+/* Need to make the areas with the results scrollable vertically */
