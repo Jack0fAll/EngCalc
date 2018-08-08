@@ -1,6 +1,6 @@
-name: EngCalc0
-description: An absolute bare-bones web app.
-# version: 1.0.0
+name: EngCalc
+description: A calculator made by engineers for engineers.
+# version: 0.4
 #homepage: https://www.example.com
 #author: Jack0fAll <email@example.com>
 

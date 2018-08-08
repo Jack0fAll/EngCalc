@@ -1,4 +1,4 @@
-# EngCalc 0.3
+# EngCalc 0.4
 
 A calculator made by engineers for engineers.
 
