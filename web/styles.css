@@ -52,6 +52,7 @@ footer {
 
 footer img {
     max-width: 10em;
+    height: auto;
 }
 
 .content-title {
